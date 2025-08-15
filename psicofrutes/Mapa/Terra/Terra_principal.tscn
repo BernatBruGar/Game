@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh1eowonf5mpx"]
+
+[ext_resource type="Texture2D" uid="uid://ci51jjy2bxtm4" path="res://Img/Mapa/Terra/Ground.png" id="1_8g2qc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uf5fm"]
+size = Vector2(1200, 184)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8g2qc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 7)
+shape = SubResource("RectangleShape2D_uf5fm")

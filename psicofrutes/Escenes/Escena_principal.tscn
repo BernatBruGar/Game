@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://uafpsbeo5ys"]
+
+[ext_resource type="PackedScene" uid="uid://dh1eowonf5mpx" path="res://Mapa/Terra/Terra_principal.tscn" id="1_hp068"]
+[ext_resource type="PackedScene" uid="uid://cw33ulce5bxcm" path="res://Personatges/Tomaquet/tomate.tscn" id="2_as5rr"]
+[ext_resource type="PackedScene" uid="uid://1qbknc4lh0ai" path="res://Mapa/Plataformes/Plataforma.tscn" id="3_506h5"]
+[ext_resource type="PackedScene" uid="uid://qh37kkvfn335" path="res://Mapa/Plataformes/Paret.tscn" id="4_acmrx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_hp068")]
+position = Vector2(3, 224)
+
+[node name="Tomate" parent="." instance=ExtResource("2_as5rr")]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("3_506h5")]
+position = Vector2(-77, -78)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("4_acmrx")]
+position = Vector2(651, -357)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("3_506h5")]
+position = Vector2(-322, -431)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("4_acmrx")]
+position = Vector2(-117, -659)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("4_acmrx")]
+position = Vector2(215, -864)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("3_506h5")]
+position = Vector2(70, -708)
